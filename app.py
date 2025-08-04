@@ -72,7 +72,7 @@ model, encoders, feature_order = load_model_and_encoders()
 def main():
     st.markdown("""
     <div class="main-header">
-        <h1>🚀 Mudra Loan Default Prediction System</h1>
+        <h1>🚀 AI-Powered Mudra Loan Risk Classifier</h1>
         <h3>Powered by Machine Learning</h3>
         <p>An intelligent loan evaluation tool that uses historical Mudra loan data to predict whether a loan is likely to default or be repaid</p>
         <p style="margin-top: 1rem; font-size: 1rem; color: #ccc;"><em>By Gurveer Singh</em></p>
