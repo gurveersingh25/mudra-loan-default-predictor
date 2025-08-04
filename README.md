@@ -1,5 +1,10 @@
 # 🚀 Mudra Loan Default Prediction System
 
+**[Live Demo on Streamlit](https://mudra-loan-default-predictor.streamlit.app/)**  
+📦 Predict loan defaults using a machine learning model trained on real Mudra loan data.
+
+---
+
 This project is a full-fledged **AI-powered loan default prediction system** built using a real-world Mudra loan dataset. The solution is deployed using **Streamlit**, integrates a trained machine learning model, and allows users to interactively input loan applicant details to get an instant prediction on whether the loan is likely to **default**.
 
 > ⚠️ The dataset used is **confidential and proprietary**. It is not included in this repository to protect sensitive financial data. A sanitized sample version can be shared **privately upon request**.
