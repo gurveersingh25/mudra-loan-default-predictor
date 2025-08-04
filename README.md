@@ -63,38 +63,6 @@ streamlit run app.py
 
 ---
 
-# 🚀 Mudra Loan Default Predictor
-
-This is a **Streamlit-based web application** that predicts the likelihood of a borrower defaulting on a loan under the Indian **Mudra Loan Scheme**, using a pre-trained machine learning model built on 100,000+ rows of real financial data.
-
----
-
-## 🎯 Project Objective
-
-To build a production-grade AI system that helps banks or financial institutions assess borrower risk for loan defaults using both numeric and categorical information like business type, geography, loan amount, etc.
-
----
-
-## 💻 Tech Stack
-
-- **Frontend**: Streamlit
-- **Backend**: Python (Flask-style architecture)
-- **Modeling**: Scikit-learn (Logistic Regression / Random Forest)
-- **Data Handling**: Pandas, NumPy
-- **Serialization**: Joblib
-- **Deployment**: Streamlit Cloud
-
----
-
-## 🧠 Features
-
-- User-friendly web form with dropdowns for categorical inputs
-- Auto-handles encoding using saved `LabelEncoder` objects
-- Ensures input consistency with the trained ML model
-- Live prediction results: ✅ *No Default* / ❌ *Likely to Default*
-
----
-
 ## ⚙️ How It Works
 
 - User fills out loan and borrower details via the form.
