@@ -5,7 +5,7 @@ import joblib
 
 # Page configuration
 st.set_page_config(
-    page_title="Mudra Loan Default Prediction System",
+    page_title="AI-Powered Mudra Loan Risk Classifier",
     page_icon="🏦",
     layout="wide",
     initial_sidebar_state="collapsed"
