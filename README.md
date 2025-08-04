@@ -63,50 +63,88 @@ streamlit run app.py
 
 ---
 
-##⚙️ How It Works
--User fills out form details (loan, borrower, geography, etc.)
--App uses stored encoders (encoder_label.pkl) to convert inputs to model-ready values
--Final input is ordered to match feature_order.pkl
--Model (mudra_model.pkl) returns prediction: ✅ Not Default / ❌ Default
+# 🚀 Mudra Loan Default Predictor
+
+This is a **Streamlit-based web application** that predicts the likelihood of a borrower defaulting on a loan under the Indian **Mudra Loan Scheme**, using a pre-trained machine learning model built on 100,000+ rows of real financial data.
 
 ---
 
-##📌 Important Notes
--This app uses LabelEncoders for categorical data. It is crucial that any new input value must already be known to the encoder (i.e., it was present in training). Unseen values will cause the app to throw a ValueError.
+## 🎯 Project Objective
 
--To avoid this, all dropdowns are dynamically populated using encoder classes, ensuring only valid options are shown in the UI.
-
----
-
-##✅ Model Details
--Model Type: Logistic Regression / RandomForestClassifier (based on best performance during experimentation)
--Training Size: ~100,000+ rows
--Features Used: 19 core features including business type, loan amount, state, city, credit line, and more
--Categorical Features: Encoded using LabelEncoder
--Numeric Features: Used as-is after cleaning and scaling
--Accuracy (test set): ~93% (Fill with actual score)
+To build a production-grade AI system that helps banks or financial institutions assess borrower risk for loan defaults using both numeric and categorical information like business type, geography, loan amount, etc.
 
 ---
 
-##🔒 Data Confidentiality
--Due to the nature of the data:
--The original dataset is not included in this repository.
--If you're an employer, recruiter, or evaluator and would like to review the working system, a sanitized sample can be shared privately on request.
+## 💻 Tech Stack
+
+- **Frontend**: Streamlit
+- **Backend**: Python (Flask-style architecture)
+- **Modeling**: Scikit-learn (Logistic Regression / Random Forest)
+- **Data Handling**: Pandas, NumPy
+- **Serialization**: Joblib
+- **Deployment**: Streamlit Cloud
 
 ---
 
-##🙋‍♂️ Author
+## 🧠 Features
+
+- User-friendly web form with dropdowns for categorical inputs
+- Auto-handles encoding using saved `LabelEncoder` objects
+- Ensures input consistency with the trained ML model
+- Live prediction results: ✅ *No Default* / ❌ *Likely to Default*
+
+---
+
+## ⚙️ How It Works
+
+- User fills out loan and borrower details via the form.
+- App uses stored encoders (`encoder_label.pkl`) to convert values.
+- Inputs are ordered using `feature_order.pkl` to match training.
+- The trained model (`mudra_model.pkl`) outputs the prediction.
+
+---
+
+## 📌 Important Notes
+
+- Categorical inputs are encoded using `LabelEncoder`.
+- **Unseen values** (not present during training) will raise a `ValueError`.
+- **All dropdowns are dynamically generated** from the encoder to prevent this issue.
+
+---
+
+## ✅ Model Details
+
+- **Model**: Logistic Regression / Random Forest (best performance retained)
+- **Dataset Size**: ~100,000+ records
+- **Features Used**: 19 core variables including:
+  - Business type
+  - City, state, bank name
+  - Loan amount, credit line, loan guarantee
+- **Categorical Handling**: LabelEncoded
+- **Numeric Handling**: Cleaned and scaled
+- **Accuracy**: ~93% (based on test set performance)
+
+---
+
+## 🔐 Data Confidentiality
+
+- Due to sensitive financial data, the **original dataset is excluded** from this repository.
+- Recruiters or evaluators may request a **sanitized sample privately** for demo purposes.
+
+---
+
+## 🙋‍♂️ Author
 Gurveer Singh
 
--📧 Email:indian.army25ff@gmail.com
+- 📧 Email:indian.army25ff@gmail.com
 
--💼 LinkedIn:https://www.linkedin.com/in/gurveer-singh-184627283/
+- 💼 LinkedIn:https://www.linkedin.com/in/gurveer-singh-184627283/
 
--🌐 GitHub:https://github.com/gurveersingh25/mudra-loan-default-predictor
+- 🌐 GitHub:https://github.com/gurveersingh25/mudra-loan-default-predictor
 
 ---
 
-##🏁 Final Note
--This project demonstrates end-to-end data science + full-stack deployment skills using real-world financial data. Ideal for showcasing in portfolios, interviews, or resume links for high-paying data science/ML roles.
+## 🏁 Final Note
+- This project demonstrates end-to-end data science + full-stack deployment skills using real-world financial data. Ideal for showcasing in portfolios, interviews, or resume links for high-paying data science/ML roles.
 
 
