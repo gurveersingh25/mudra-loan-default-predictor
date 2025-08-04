@@ -63,60 +63,50 @@ streamlit run app.py
 
 ---
 
-⚙️ How It Works
-User fills out form details (loan, borrower, geography, etc.)
-
-App uses stored encoders (encoder_label.pkl) to convert inputs to model-ready values
-
-Final input is ordered to match feature_order.pkl
-
-Model (mudra_model.pkl) returns prediction: ✅ Not Default / ❌ Default
+##⚙️ How It Works
+-User fills out form details (loan, borrower, geography, etc.)
+-App uses stored encoders (encoder_label.pkl) to convert inputs to model-ready values
+-Final input is ordered to match feature_order.pkl
+-Model (mudra_model.pkl) returns prediction: ✅ Not Default / ❌ Default
 
 ---
 
-📌 Important Notes
-This app uses LabelEncoders for categorical data. It is crucial that any new input value must already be known to the encoder (i.e., it was present in training). Unseen values will cause the app to throw a ValueError.
+##📌 Important Notes
+-This app uses LabelEncoders for categorical data. It is crucial that any new input value must already be known to the encoder (i.e., it was present in training). Unseen values will cause the app to throw a ValueError.
 
-To avoid this, all dropdowns are dynamically populated using encoder classes, ensuring only valid options are shown in the UI.
-
----
-
-✅ Model Details
-Model Type: Logistic Regression / RandomForestClassifier (based on best performance during experimentation)
-
-Training Size: ~100,000+ rows
-
-Features Used: 19 core features including business type, loan amount, state, city, credit line, and more
-
-Categorical Features: Encoded using LabelEncoder
-
-Numeric Features: Used as-is after cleaning and scaling
-
-Accuracy (test set): ~93% (Fill with actual score)
+-To avoid this, all dropdowns are dynamically populated using encoder classes, ensuring only valid options are shown in the UI.
 
 ---
 
-🔒 Data Confidentiality
-Due to the nature of the data:
-
-The original dataset is not included in this repository.
-
-If you're an employer, recruiter, or evaluator and would like to review the working system, a sanitized sample can be shared privately on request.
+##✅ Model Details
+-Model Type: Logistic Regression / RandomForestClassifier (based on best performance during experimentation)
+-Training Size: ~100,000+ rows
+-Features Used: 19 core features including business type, loan amount, state, city, credit line, and more
+-Categorical Features: Encoded using LabelEncoder
+-Numeric Features: Used as-is after cleaning and scaling
+-Accuracy (test set): ~93% (Fill with actual score)
 
 ---
 
-🙋‍♂️ Author
+##🔒 Data Confidentiality
+-Due to the nature of the data:
+-The original dataset is not included in this repository.
+-If you're an employer, recruiter, or evaluator and would like to review the working system, a sanitized sample can be shared privately on request.
+
+---
+
+##🙋‍♂️ Author
 Gurveer Singh
 
-📧 indian.army25ff@gmail.com
+-📧 Email:indian.army25ff@gmail.com
 
-💼 LinkedIn:https://www.linkedin.com/in/gurveer-singh-184627283/
+-💼 LinkedIn:https://www.linkedin.com/in/gurveer-singh-184627283/
 
-🌐 GitHub:https://github.com/gurveersingh25/mudra-loan-default-predictor
+-🌐 GitHub:https://github.com/gurveersingh25/mudra-loan-default-predictor
 
 ---
 
-🏁 Final Note
-This project demonstrates end-to-end data science + full-stack deployment skills using real-world financial data. Ideal for showcasing in portfolios, interviews, or resume links for high-paying data science/ML roles.
+##🏁 Final Note
+-This project demonstrates end-to-end data science + full-stack deployment skills using real-world financial data. Ideal for showcasing in portfolios, interviews, or resume links for high-paying data science/ML roles.
 
 
